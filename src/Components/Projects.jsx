@@ -1,37 +1,43 @@
 import React from "react";
 
+import netflix from "../netlfix.png";
+import store from "../store.png";
+import journal from "../journal.png";
+import calendar from "../calendar.png";
+
 export const Projects = () => {
   const projects = [
     {
-      title: "Project 1",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      imageUrl: "project1.png",
-      demoUrl: "https://example.com/project1",
-      githubUrl: "https://github.com/example/project1",
+      title: "Netflix Clone",
+      description:
+        "This is a Netflix clone where you can see al movies by categories and also save your favorite movies to your list",
+      imageUrl: netflix,
+      demoUrl: "https://netflix-joamonb.netlify.app/",
+      githubUrl: "https://github.com/JoaquinMonge/Movie",
     },
     {
-      title: "Project 2",
+      title: "Online Store",
       description:
-        "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      imageUrl: "project2.png",
-      demoUrl: "https://example.com/project2",
-      githubUrl: "https://github.com/example/project2",
+        "Online clothing store where you can add items to your cart and search by catgories",
+      imageUrl: store,
+      demoUrl: "https://joamonb-store.netlify.app/",
+      githubUrl: "https://github.com/JoaquinMonge/react-cart",
     },
     {
-      title: "Project 2",
+      title: "Journal",
       description:
-        "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      imageUrl: "project2.png",
-      demoUrl: "https://example.com/project2",
-      githubUrl: "https://github.com/example/project2",
+        "Journal where you can create entries and also upload photos to it.",
+      imageUrl: journal,
+      demoUrl: "https://journal-joamonb.netlify.app",
+      githubUrl: "https://github.com/JoaquinMonge/journal-app",
     },
     {
-      title: "Project 2",
+      title: "Calendar",
       description:
-        "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      imageUrl: "project2.png",
-      demoUrl: "https://example.com/project2",
-      githubUrl: "https://github.com/example/project2",
+        "Calendar that can be used as a team. Multiple users can add entries to it.",
+      imageUrl: calendar,
+      demoUrl: "https://github.com/JoaquinMonge/calendar-backend",
+      githubUrl: "https://github.com/JoaquinMonge/calendar-backend",
     },
     // Add more projects as needed
   ];
@@ -41,7 +47,7 @@ export const Projects = () => {
       <h2>Projects</h2>
       {projects.map((project, index) => (
         <div className="project" key={index}>
-          <img src={project.imageUrl} alt={project.title} />
+          <img className="imgProj" src={project.imageUrl} alt={project.title} />
           <div className="project-details">
             <h3>{project.title}</h3>
             <p>{project.description}</p>
