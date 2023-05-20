@@ -45,6 +45,7 @@ export const Projects = () => {
   return (
     <div className="projects">
       <h2>Projects</h2>
+      
       {projects.map((project, index) => (
         <div className="project" key={index}>
           <img className="imgProj" src={project.imageUrl} alt={project.title} />

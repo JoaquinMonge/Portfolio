@@ -38,6 +38,11 @@ export const Technologies = () => {
       <h2>Technologies</h2>
 
       <p>
+        I'm always eager to learn and explore new technologies to enhance my
+        skills.
+      </p>
+
+      <p>
         I have experience with multiple technologies but i am always willing to
         learn new things
       </p>

@@ -14,21 +14,22 @@ body{
     z-index: 999;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     /* Estilos adicionales para el navbar */
+    
   }
 
 .mobile-navbar {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    background-color: rgb(12, 10, 10);
+    background-color: rgb(53, 106, 80);
+
     color: white;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
     position: fixed;
     width: 100%;
-    
-   
-    
-    
+    position: sticky;
+  top: 0;
+  z-index: 999;
     
 
   }
@@ -75,7 +76,8 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    background-color: #333;
+background-color: rgb(53, 106, 80);
+    
     color: #fff;
   }
   
@@ -117,37 +119,95 @@ body{
 /* about me */
 
 .about-me {
-   
     width: 100%;
     height: 100vh;
-    background-color: antiquewhite;
+    background-color: rgb(86, 169, 129);
     display: flex;
     flex-direction: column;
     text-align: center;
-justify-content: center;
+    justify-content: center;
+    align-items: center;
 
+  }
+
+  .aboutMeCard{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(243, 245, 207);
+    width: 60%;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    padding: 10px;
+
+  }
+
+  .aboutMeCard:hover{
+    transform: scale(1.1); /* Aumenta el tamaño al 110% */
+    background-color: rgb(178, 185, 158);
+
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Agrega una transición suave */
+  color: white;
+  font-weight: bold;
+  }
+
+  .about-me h1{
+    color: white;
   }
   
   .about-me h2 {
     font-size: 24px;
     margin-bottom: 10px;
-    margin-top: 0px;
+    margin-top: 90px;
+    color: white;
+
   }
   
   .about-me p {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 10px;
-    padding: 0px 20px;
+    width: 70%;    
+    
   }
 
   .btnCV{
     border-radius: 10px;
     border:none;
     padding: 10px;;
-    background-color: blue;
+    background-color: rgb(76, 129, 97);
     color: white;
     margin-top: 20px;
+    font-weight: bold;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+
+  }
+
+  .btnCV:hover{
+    transform: scale(1.1); /* Aumenta el tamaño al 110% */
+    background-color: rgb(117, 166, 123); /* Cambia el color de fondo a lightblue */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Agrega una transición suave */
+    cursor: pointer;
+  }
+
+  .btnContact{
+    width: fit-content;
+    border: none;
+    background-color: rgb(178, 185, 158);
+
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    
+  }
+
+  .btnContact:hover{
+    transform: scale(1.1); /* Aumenta el tamaño al 110% */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Agrega una transición suave */
+    cursor: pointer;
   }
 
 
@@ -164,11 +224,13 @@ justify-content: center;
     width: 100%;
 
     height: 100vh;
-    background-color: rgb(240, 248, 187);
+    background-color: rgb(178, 185, 158);
+
     display: flex;
     flex-direction: column;
     text-align: center;
 justify-content: center;
+align-items: center;
 
 
    
@@ -178,9 +240,13 @@ justify-content: center;
  
   .technologies h2 {
     font-size: 24px;
-    margin-bottom: 10px;
+    margin-bottom: px;
     margin-top: 0px;
 
+  }
+
+  .technologies p{
+    width: 80%;
   }
 
   .techImages {
@@ -221,34 +287,61 @@ margin: 20px;
     align-items: center;
     text-align: center;
     justify-content: center;
-    font-size: 90px;
+    font-size: 80px;
+
   }
 
   .card {
-    background-color: #fff;
+    background-color: rgb(86, 169, 129);
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     width: 40%;
-    margin: 0 auto;
-    padding: 16px;
+    margin: 20px auto;
+    padding: 15px;
+    animation: bounce 5s infinite;
   }
+
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  
 
   .ic {
     transition: transform 0.3s ease;
-   padding: 0px 30px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   background-color: rgb(188, 192, 155);
+   border-radius: 10px;
+   margin-right: 10px;
+   
+    
   }
   
   .ic:hover {
     transform: translateY(-5px);
   }
 
+
+
   @media (max-width: 768px) {
     .card {
       width: 80%;
+
     }
+   
   
     .ic {
       padding: 0px 10px;
+      margin-right: 4px;
     }
     .iconsTech{
       font-size: 50px;
@@ -264,14 +357,15 @@ margin: 20px;
     width: 100%;
     margin: 0 auto;
     height: auto;
-background-color: bisque;
-display: flex;
-flex-direction: column;
-text-align: center;
-align-items: center;
-justify-content: center;
+    background-color: rgb(178, 185, 158);
 
-  }
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+  } 
   
   .project {
     margin-top: 10px;
@@ -279,18 +373,30 @@ justify-content: center;
     align-items: center;
     margin-bottom: 20px;
     display: flex;
-flex-direction: column;
-text-align: center;
-align-items: center;
-justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(86, 169, 129);
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    width: 70%;
+    margin: 20px auto;
+    padding: 15px;
+    animation: bounce 5s infinite;
+
   }
   
   .project img {
-    width: 340px;
-    height: 250px;
+    width: 840px;
+    height: 450px;
     border-radius: 5px;
+    margin-top: 30px;
     
   }
+
+
+
 
   
   
@@ -325,6 +431,19 @@ justify-content: center;
     margin-top: 0px;
 
   }
+
+  @media (max-width: 768px) {
+    .project img{
+      width:350px;
+      height: 250px;
+    }
+
+    .project{
+      width: 85%;
+    }
+    
+  }
+
   /* contact */
 
 
@@ -377,13 +496,5 @@ justify-content: center;
     background-color: #555;
   }
 
-  .btnContact{
-    width: fit-content;
-    border: none;
-    background-color: red;
-    border-radius: 10px;
-    padding: 10px;
-    margin-top: 10px;
-    
-  }
+  
   

@@ -15,19 +15,14 @@ export const AboutMe = () => {
       <div className="button-container">
         <button className="btnContact">Contact me</button>
       </div>
-      <p>
-        Welcome to my portfolio! I'm a passionate developer with a love for
-        creating amazing web applications. With experience in JavaScript, React,
-        NodeJs, I enjoy bringing ideas to life through code.
-      </p>
-      <p>
-        I have experience working on various projects that are shon in here. I'm
-        always eager to learn and explore new technologies to enhance my skills.
-      </p>
-      <p>
-        Feel free to explore my projects and get in touch with me for any
-        inquiries or opportunities. Let's build something incredible together!
-      </p>
+
+      <div className="aboutMeCard animate__bounceIn animate__backInUp animate__delay-2s">
+        <p>
+          Welcome to my portfolio! I'm a passionate developer with a love for
+          creating amazing web applications. With experience in JavaScript,
+          React, NodeJs, I enjoy bringing ideas to life through code.
+        </p>
+      </div>
 
       <div>
         <button className="btnCV">Download CV</button>
